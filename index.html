@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aviation Spare Parts Store: Your One-Stop Aviation Hub | AircraftSparePartsSupply</title>
+  <meta name="description" content="Discover what makes a professional aviation spare parts store your fleet's lifeline. Expert sourcing, FAA/EASA documentation, AOG response, counterfeit detection, and trusted supplier relationships — all in one guide." />
+  <link rel="canonical" href="https://aircraftsparepartssupply.com/" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --deep:       #05111f;
+      --deep-mid:   #091b30;
+      --deep-soft:  #102540;
+      --emerald:    #0a6e4f;
+      --emerald-lt: #0f9068;
+      --emerald-bg: rgba(10,110,79,.08);
+      --sky:        #1565c0;
+      --sky-lt:     #1e80e8;
+      --silver:     #c8a951;
+      --silver-lt:  #e4c56a;
+      --silver-pale:#fdf8ec;
+      --white:      #ffffff;
+      --canvas:     #f0f4f8;
+      --surface:    #ffffff;
+      --border:     #dce6f0;
+      --text:       #192a3a;
+      --muted:      #526880;
+      --danger:     #a81c1c;
+      --shadow-xs:  0 1px 8px rgba(5,17,31,.07);
+      --shadow-sm:  0 4px 22px rgba(5,17,31,.10);
+      --shadow-md:  0 10px 40px rgba(5,17,31,.14);
+      --shadow-lg:  0 20px 64px rgba(5,17,31,.18);
+      --r:          13px;
+      --r-sm:       7px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--canvas);
+      color: var(--text);
+      line-height: 1.78;
+    }
+
+    /* ─── HEADER ──────────────────────────────────── */
+    header {
+      background: var(--deep);
+      position: sticky; top: 0; z-index: 999;
+      box-shadow: 0 2px 30px rgba(0,0,0,.45);
+      border-bottom: 1px solid rgba(255,255,255,.05);
+    }
+    .hdr {
+      max-width: 1240px; margin: 0 auto;
+      padding: 0 32px; height: 70px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 13px;
+      text-decoration: none;
+    }
+    .logo-mark {
+      width: 42px; height: 42px;
+      background: linear-gradient(135deg, var(--emerald-lt), var(--silver));
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-name {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700; font-size: 16px;
+      color: var(--white); letter-spacing: .3px; line-height: 1.1;
+    }
+    .logo-sub {
+      font-size: 10px; color: var(--silver-lt);
+      letter-spacing: 1.3px; text-transform: uppercase;
+    }
+    nav { display: flex; align-items: center; gap: 26px; }
+    nav a {
+      color: rgba(180,205,230,.8); font-size: 13px;
+      font-weight: 500; text-decoration: none; transition: color .2s;
+    }
+    nav a:hover { color: var(--silver-lt); }
+    .nav-cta {
+      background: var(--emerald) !important;
+      color: var(--white) !important;
+      padding: 8px 20px; border-radius: 6px;
+      font-weight: 700 !important;
+      transition: filter .2s, transform .2s !important;
+    }
+    .nav-cta:hover { filter: brightness(1.15); transform: translateY(-1px); }
+
+    /* ─── HERO ────────────────────────────────────── */
+    .hero {
+      background: var(--deep-mid);
+      padding: 98px 32px 86px;
+      position: relative; overflow: hidden;
+    }
+    .hero-atmosphere {
+      position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 60% 55% at 8% 92%, rgba(10,110,79,.24) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 45% at 92% 8%, rgba(200,169,81,.16) 0%, transparent 60%);
+    }
+    .hero-mesh {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
+      background-size: 54px 54px;
+    }
+    .hero-inner {
+      max-width: 880px; margin: 0 auto;
+      position: relative; z-index: 1; text-align: center;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(200,169,81,.14);
+      border: 1px solid rgba(200,169,81,.38);
+      color: var(--silver-lt); font-size: 11px; font-weight: 700;
+      letter-spacing: 1.7px; text-transform: uppercase;
+      padding: 5px 17px; border-radius: 100px; margin-bottom: 28px;
+    }
+    .hero h1 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700;
+      font-size: clamp(28px, 4.8vw, 56px);
+      color: var(--white); line-height: 1.13;
+      margin-bottom: 22px; letter-spacing: -.3px;
+    }
+    .hero h1 em { font-style: normal; color: var(--silver-lt); }
+    .hero-sub {
+      font-size: 17.5px; color: rgba(175,208,232,.82);
+      max-width: 660px; margin: 0 auto 50px; line-height: 1.83;
+    }
+    .kpis {
+      display: flex; justify-content: center;
+      gap: 58px; flex-wrap: wrap;
+    }
+    .kpi { text-align: center; }
+    .kpi-v {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 900; font-size: 42px;
+      color: var(--silver-lt); line-height: 1;
+    }
+    .kpi-l {
+      font-size: 11px; text-transform: uppercase;
+      letter-spacing: 1.1px; color: rgba(155,192,222,.68);
+      margin-top: 5px;
+    }
+
+    /* ─── WRAP ────────────────────────────────────── */
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 72px 32px; }
+
+    /* ─── SECTION ─────────────────────────────────── */
+    .sec { margin-bottom: 80px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase;
+      color: var(--emerald-lt); margin-bottom: 13px;
+    }
+    .eyebrow::before {
+      content: ''; display: inline-block;
+      width: 22px; height: 2px; background: var(--emerald-lt);
+    }
+    h2.sh {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700;
+      font-size: clamp(24px, 3.2vw, 38px);
+      color: var(--deep); line-height: 1.2; margin-bottom: 18px;
+    }
+    .prose { font-size: 16.5px; color: #2c4458; line-height: 1.86; }
+    .prose p { margin-bottom: 17px; }
+    .prose p:last-child { margin-bottom: 0; }
+    a.tl {
+      color: var(--emerald-lt); font-weight: 600;
+      text-decoration: underline; text-underline-offset: 3px;
+      transition: color .2s;
+    }
+    a.tl:hover { color: var(--emerald); }
+    .sep {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 72px 0;
+    }
+
+    /* ─── INTRO PANEL ─────────────────────────────── */
+    .intro-panel {
+      background: var(--surface); border-radius: var(--r);
+      padding: 52px 56px; box-shadow: var(--shadow-md);
+      border-left: 5px solid var(--emerald-lt);
+      position: relative; overflow: hidden;
+    }
+    .intro-panel::after {
+      content: '🏪'; position: absolute;
+      right: 44px; top: 28px; font-size: 88px;
+      opacity: .04; pointer-events: none;
+    }
+
+    /* ─── TWO-COL ─────────────────────────────────── */
+    .two-col {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 36px; align-items: start;
+    }
+    @media(max-width:800px) {
+      .two-col { grid-template-columns: 1fr; }
+      nav { display: none; }
+      .intro-panel { padding: 32px 24px; }
+      .kpis { gap: 28px; }
+      .dark-blk { padding: 38px 28px; }
+      .rf-panel { padding: 36px 28px; }
+      .cncl { padding: 50px 28px; }
+    }
+
+    /* ─── CARD ────────────────────────────────────── */
+    .card {
+      background: var(--surface); border-radius: var(--r);
+      padding: 30px; box-shadow: var(--shadow-sm);
+      transition: box-shadow .3s, transform .3s;
+    }
+    .card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .card-ico {
+      width: 48px; height: 48px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 21px; margin-bottom: 15px;
+    }
+    .ic-em { background: rgba(10,110,79,.1); }
+    .ic-sv { background: rgba(200,169,81,.1); }
+    .ic-sk { background: rgba(21,101,192,.1); }
+    .ic-gy { background: rgba(82,104,128,.09); }
+    .card-h { font-family: 'Roboto Condensed', sans-serif; font-weight: 700; font-size: 17px; color: var(--deep); margin-bottom: 9px; }
+    .card-p { font-size: 14px; color: var(--muted); line-height: 1.68; }
+
+    /* ─── SERVICES GRID ───────────────────────────── */
+    .svc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+    .svc-card {
+      background: var(--surface); border-radius: var(--r);
+      padding: 28px 26px; box-shadow: var(--shadow-sm);
+      border-top: 4px solid var(--emerald-lt);
+      transition: box-shadow .3s, transform .3s;
+    }
+    .svc-card:nth-child(2) { border-top-color: var(--silver); }
+    .svc-card:nth-child(3) { border-top-color: var(--sky-lt); }
+    .svc-card:nth-child(4) { border-top-color: #9b27af; }
+    .svc-card:nth-child(5) { border-top-color: #c62828; }
+    .svc-card:nth-child(6) { border-top-color: #0277bd; }
+    .svc-card:nth-child(7) { border-top-color: #2e7d32; }
+    .svc-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .svc-num {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 900; font-size: 42px;
+      color: var(--border); line-height: 1; margin-bottom: 8px;
+    }
+    .svc-h { font-family: 'Roboto Condensed', sans-serif; font-weight: 700; font-size: 17px; color: var(--deep); margin-bottom: 9px; }
+    .svc-p { font-size: 14px; color: var(--muted); line-height: 1.68; }
+
+    /* ─── TABLE ───────────────────────────────────── */
+    .tbl-box { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow-md); overflow: hidden; }
+    .tbl-cap { background: var(--deep); padding: 22px 30px; }
+    .tbl-cap h3 { font-family: 'Roboto Condensed', sans-serif; font-weight: 700; font-size: 19px; color: var(--white); }
+    .tbl-cap p { font-size: 12.5px; color: var(--muted); margin-top: 3px; }
+    .tbl-sc { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    thead tr { background: var(--emerald); }
+    thead th {
+      padding: 13px 18px; text-align: left;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700; font-size: 12.5px;
+      color: var(--white); letter-spacing: .4px; white-space: nowrap;
+    }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background .15s; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: #f3f8f5; }
+    tbody tr:nth-child(even) { background: #f9fcfa; }
+    tbody tr:nth-child(even):hover { background: #ecf5f0; }
+    td { padding: 13px 18px; font-size: 13.5px; color: var(--text); vertical-align: middle; }
+    td:first-child { font-weight: 700; color: var(--deep); }
+    .bg { display:inline-block; background:rgba(10,110,79,.1); color:var(--emerald); font-weight:700; font-size:12px; padding:3px 10px; border-radius:100px; }
+    .bs { display:inline-block; background:rgba(200,169,81,.1); color:#8a6d10; font-weight:700; font-size:12px; padding:3px 10px; border-radius:100px; }
+
+    /* ─── DARK BLOCK ──────────────────────────────── */
+    .dark-blk {
+      background: linear-gradient(135deg, var(--deep) 0%, var(--deep-mid) 100%);
+      border-radius: var(--r); padding: 62px 58px;
+      position: relative; overflow: hidden;
+    }
+    .dark-blk::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 55% 50% at 92% 6%, rgba(200,169,81,.15) 0%, transparent 60%);
+    }
+    .dark-blk .eyebrow { color: var(--silver-lt); }
+    .dark-blk .eyebrow::before { background: var(--silver-lt); }
+    .dark-blk h2.sh { color: var(--white); }
+    .dark-blk .sub-p { font-size: 16px; color: rgba(185,215,238,.76); max-width: 720px; line-height: 1.82; margin-top: 4px; position: relative; z-index: 1; }
+    .steps-dk {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px; margin-top: 36px;
+    }
+    .step-dk {
+      display: flex; gap: 16px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: var(--r-sm); padding: 22px 20px;
+      transition: background .2s;
+    }
+    .step-dk:hover { background: rgba(255,255,255,.09); }
+    .step-n {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 900; font-size: 30px;
+      color: var(--silver-lt); line-height: 1; min-width: 32px;
+    }
+    .step-txt { font-size: 14px; color: rgba(195,222,240,.84); line-height: 1.65; }
+
+    /* ─── HIGHLIGHT ───────────────────────────────── */
+    .hl { border-radius: var(--r); padding: 30px 34px; margin-bottom: 20px; }
+    .hl-em  { background: rgba(10,110,79,.07); border-left: 5px solid var(--emerald-lt); }
+    .hl-sv  { background: rgba(200,169,81,.07); border-left: 5px solid var(--silver); }
+    .hl-sk  { background: rgba(21,101,192,.07); border-left: 5px solid var(--sky-lt); }
+    .hl-rd  { background: rgba(168,28,28,.07); border-left: 5px solid var(--danger); }
+    .hl h4 { font-family: 'Roboto Condensed', sans-serif; font-weight: 700; font-size: 17px; color: var(--deep); margin-bottom: 7px; }
+    .hl p  { font-size: 14.5px; color: var(--muted); line-height: 1.7; }
+
+    /* ─── RF PANEL ────────────────────────────────── */
+    .rf-panel {
+      background: #fdf4f4; border: 1px solid rgba(168,28,28,.14);
+      border-radius: var(--r); padding: 50px 54px;
+    }
+    .rf-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px; margin-top: 34px;
+    }
+    .rf-item { display: flex; gap: 13px; align-items: flex-start; }
+    .rf-dot {
+      width: 30px; height: 30px; background: var(--danger);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 13px; flex-shrink: 0; margin-top: 2px;
+    }
+    .rf-txt { font-size: 14.5px; color: #4a1818; line-height: 1.65; }
+
+    /* ─── TIPS ────────────────────────────────────── */
+    .tips { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .tips li {
+      display: flex; gap: 13px; align-items: flex-start;
+      background: var(--surface); border-radius: var(--r-sm);
+      padding: 15px 17px; box-shadow: var(--shadow-xs);
+    }
+    .tip-dot {
+      width: 26px; height: 26px;
+      background: linear-gradient(135deg, var(--emerald), var(--emerald-lt));
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 12px; font-weight: 700; flex-shrink: 0;
+    }
+    .tip-t { font-size: 14.5px; color: var(--text); line-height: 1.65; }
+
+    /* ─── ANATOMY STEPS ───────────────────────────── */
+    .anatomy-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      background: var(--surface); border-radius: var(--r);
+      box-shadow: var(--shadow-md); overflow: hidden;
+    }
+    .an-step {
+      padding: 26px 20px; border-right: 1px solid var(--border);
+      text-align: center;
+    }
+    .an-step:last-child { border-right: none; }
+    .an-ico { font-size: 28px; margin-bottom: 10px; }
+    .an-l { font-weight: 700; font-size: 12.5px; color: var(--deep); text-transform: uppercase; letter-spacing: .4px; margin-bottom: 6px; }
+    .an-d { font-size: 12px; color: var(--muted); line-height: 1.52; }
+
+    /* ─── TREND GRID ──────────────────────────────── */
+    .trend-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .trend-card {
+      background: var(--surface); border-radius: var(--r);
+      padding: 26px 24px; box-shadow: var(--shadow-sm);
+      transition: box-shadow .3s, transform .3s;
+    }
+    .trend-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .trend-ico { font-size: 28px; margin-bottom: 12px; }
+    .trend-h { font-family: 'Roboto Condensed', sans-serif; font-weight: 700; font-size: 16px; color: var(--deep); margin-bottom: 8px; }
+    .trend-p { font-size: 13.5px; color: var(--muted); line-height: 1.65; }
+
+    /* ─── CONCLUSION ──────────────────────────────── */
+    .cncl {
+      background: linear-gradient(135deg, var(--deep-mid), var(--deep));
+      border-radius: var(--r); padding: 66px 62px;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .cncl::before {
+      content: ''; position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 20% 60%, rgba(10,110,79,.2) 0%, transparent 55%),
+        radial-gradient(circle at 82% 22%, rgba(200,169,81,.15) 0%, transparent 52%);
+    }
+    .cncl .eyebrow { justify-content: center; color: var(--silver-lt); }
+    .cncl .eyebrow::before { background: var(--silver-lt); }
+    .cncl h2.sh { color: var(--white); }
+    .cncl-body {
+      font-size: 17px; color: rgba(185,218,238,.8);
+      line-height: 1.87; max-width: 800px;
+      margin: 0 auto 42px; position: relative; z-index: 1;
+    }
+    .cncl-body p { margin-bottom: 16px; }
+    .cncl-body p:last-child { margin-bottom: 0; }
+    .cncl-cta {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--silver), var(--silver-lt));
+      color: var(--deep); font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700; font-size: 16px; letter-spacing: .5px;
+      padding: 16px 44px; border-radius: 8px; text-decoration: none;
+      box-shadow: 0 4px 24px rgba(200,169,81,.4);
+      transition: box-shadow .2s, transform .2s;
+      position: relative; z-index: 1;
+    }
+    .cncl-cta:hover { box-shadow: 0 8px 38px rgba(200,169,81,.6); transform: translateY(-2px); }
+
+    /* ─── FOOTER ──────────────────────────────────── */
+    footer { background: var(--deep); padding: 66px 32px 36px; }
+    .ftr { max-width: 1240px; margin: 0 auto; }
+    .ftr-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 52px; margin-bottom: 52px;
+    }
+    @media(max-width:800px) { .ftr-grid { grid-template-columns: 1fr; gap: 32px; } }
+    .ftr-about p {
+      font-size: 13.5px; line-height: 1.76;
+      color: rgba(148,180,212,.7);
+      margin-top: 15px; max-width: 310px;
+    }
+    .ftr-col h4 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700; font-size: 13px;
+      text-transform: uppercase; letter-spacing: 1px;
+      color: var(--white); margin-bottom: 16px;
+    }
+    .ftr-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .ftr-col ul li a {
+      color: rgba(148,180,212,.72); text-decoration: none;
+      font-size: 13.5px; transition: color .2s;
+    }
+    .ftr-col ul li a:hover { color: var(--silver-lt); }
+    .ftr-bottom {
+      border-top: 1px solid rgba(255,255,255,.07);
+      padding-top: 28px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .ftr-bottom p { font-size: 12.5px; color: rgba(148,180,212,.45); }
+    .ftr-links { display: flex; gap: 20px; }
+    .ftr-links a { font-size: 12.5px; color: rgba(148,180,212,.45); text-decoration: none; transition: color .2s; }
+    .ftr-links a:hover { color: var(--silver-lt); }
+
+    /* ─── REVEAL ──────────────────────────────────── */
+    .rv { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
+    .rv.on { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header>
+  <div class="hdr">
+    <a href="https://aircraftsparepartssupply.com/" class="logo">
+      <div class="logo-mark">✈</div>
+      <div class="logo-text">
+        <span class="logo-name">AircraftSparePartsSupply</span>
+        <span class="logo-sub">Certified Aviation Components</span>
+      </div>
+    </a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#store-types">Store Types</a>
+      <a href="#docs">Documentation</a>
+      <a href="#future">Future</a>
+      <a href="https://aircraftsparepartssupply.com/" class="nav-cta">Shop Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-atmosphere"></div>
+  <div class="hero-mesh"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">✦ Your One-Stop Aviation Hub</div>
+    <h1>Aviation Spare Parts Store:<br /><em>Your Fleet's True Lifeline</em></h1>
+    <p class="hero-sub">Behind every on-time departure is a part that was exactly where it needed to be. Discover what makes a professional aviation parts store the unsung hero of the aviation world.</p>
+    <div class="kpis">
+      <div class="kpi"><div class="kpi-v">7</div><div class="kpi-l">Essential Services</div></div>
+      <div class="kpi"><div class="kpi-v">24/7</div><div class="kpi-l">AOG Response</div></div>
+      <div class="kpi"><div class="kpi-v">FAA</div><div class="kpi-l">Certified Always</div></div>
+      <div class="kpi"><div class="kpi-v">100%</div><div class="kpi-l">Documented Parts</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MAIN CONTENT ══ -->
+<div class="wrap">
+
+  <!-- INTRO -->
+  <section class="sec rv" id="intro">
+    <div class="intro-panel">
+      <div class="eyebrow">Introduction</div>
+      <h2 class="sh">Your One-Stop Aviation Hub</h2>
+      <div class="prose">
+        <p>Behind every aircraft that takes off on time is a part that was exactly where it needed to be. That part came from somewhere. Not from a factory floor, not from a distant warehouse, but from a place designed specifically to serve the needs of maintenance teams, mechanics, and fleet operators. That place is an <a href="https://aircraftsparepartssupply.com/" class="tl">Aviation Spare Parts Store</a>.</p>
+        <p>Unlike a hardware store or an auto parts shop, an aviation parts store operates under rules that would paralyze any normal retailer. Every component must be traceable. Every transaction must be documented. Every shelf must be organized with the precision of an operating room. Yet despite these demands, or perhaps because of them, these stores are the unsung heroes of the aviation world, holding the inventory that keeps the world's aircraft flying safely and reliably.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANATOMY -->
+  <section class="sec rv">
+    <div class="eyebrow">Inside the Store</div>
+    <h2 class="sh">The Anatomy of a Professional Aviation Store</h2>
+    <p style="font-size:16px;color:var(--muted);margin-bottom:36px;max-width:740px;line-height:1.8;">Walking into a professional aviation spare parts store reveals a world organized with military precision. Every system, every shelf, every process exists for one reason — ensuring the right part reaches the right aircraft on time.</p>
+    <div class="anatomy-row">
+      <div class="an-step">
+        <div class="an-ico">🗄️</div>
+        <div class="an-l">Shelving System</div>
+        <p class="an-d">Rows labeled with part numbers, quantities, and bin locations — organized with the precision of an operating room</p>
+      </div>
+      <div class="an-step">
+        <div class="an-ico">🌡️</div>
+        <div class="an-l">Climate Control</div>
+        <p class="an-d">Constant temperature and humidity protecting sensitive components from environmental degradation</p>
+      </div>
+      <div class="an-step">
+        <div class="an-ico">🔐</div>
+        <div class="an-l">Secure Cages</div>
+        <p class="an-d">High-value items accessible only to authorized personnel with full access logging and accountability</p>
+      </div>
+      <div class="an-step">
+        <div class="an-ico">🔍</div>
+        <div class="an-l">Receiving Station</div>
+        <p class="an-d">Inspection stations where incoming parts are verified against documentation before entering inventory</p>
+      </div>
+      <div class="an-step">
+        <div class="an-ico">📦</div>
+        <div class="an-l">Shipping Station</div>
+        <p class="an-d">Ready to pack and dispatch components on a moment's notice for AOG and routine needs alike</p>
+      </div>
+      <div class="an-step" style="border-right:none;">
+        <div class="an-ico">💻</div>
+        <div class="an-l">Inventory System</div>
+        <p class="an-d">Every movement, every transaction, every part tracked from receipt to sale with full traceability</p>
+      </div>
+    </div>
+    <div class="prose" style="margin-top:28px;">
+      <p>The staff understands aviation regulations, documentation requirements, and the urgency that defines every AOG situation. This is not a place where you browse for fun. It is a place where maintenance professionals come when their aircraft cannot wait.</p>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- WHAT MAKES IT DIFFERENT -->
+  <section class="sec rv">
+    <div class="two-col">
+      <div>
+        <div class="eyebrow">Core Differences</div>
+        <h2 class="sh">What Makes an Aviation Store Different from Any Other Retailer</h2>
+        <div class="prose">
+          <p>The differences between an aviation spare parts store and any other type of retailer run deep. A typical store sells products to consumers who make choices based on price, features, and brand preference. An aviation store sells components that must meet exact specifications, with no substitutions, no alternatives, and no compromises.</p>
+          <p>A typical store accepts returns on almost any item for almost any reason. An aviation store accepts returns only under specific conditions, with documentation requirements that mirror the original sale. A typical store trains staff on customer service and product knowledge. An aviation store trains staff on regulatory compliance, documentation authentication, and the technical details of thousands of part numbers.</p>
+          <p>A typical store measures success by sales volume and customer satisfaction. An aviation store measures success by fill rates, response times, and the number of AOG situations resolved. The two worlds could not be more different. One serves convenience. The other serves safety.</p>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:18px;">
+        <div class="card">
+          <div class="card-ico ic-em">📐</div>
+          <div class="card-h">Exact Specifications Only</div>
+          <p class="card-p">No substitutions, no alternatives, no compromises. Every component must precisely match approved design data — period.</p>
+        </div>
+        <div class="card">
+          <div class="card-ico ic-sv">📋</div>
+          <div class="card-h">Documentation-Driven Returns</div>
+          <p class="card-p">Returns accepted only under specific conditions with paperwork requirements mirroring the original sale transaction.</p>
+        </div>
+        <div class="card">
+          <div class="card-ico ic-sk">⚡</div>
+          <div class="card-h">AOG Performance Metrics</div>
+          <p class="card-p">Success measured by fill rates, response times, and AOG resolutions — not sales volume or satisfaction surveys.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- SEVEN SERVICES -->
+  <section class="sec rv" id="services">
+    <div class="eyebrow">Core Services</div>
+    <h2 class="sh">Seven Services a Quality Aviation Store Provides</h2>
+    <p style="font-size:16px;color:var(--muted);margin-bottom:36px;max-width:740px;line-height:1.8;">These seven essential services distinguish a quality aviation spare parts store from a mere parts seller. Stores that provide these services become partners, not just vendors, to the maintenance operations they serve.</p>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-num">01</div>
+        <div class="svc-h">Part Sourcing Network</div>
+        <p class="svc-p">No single store stocks every component. Professional stores maintain supplier networks to find what they don't have on hand — quickly and reliably.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">02</div>
+        <div class="svc-h">Documentation Verification</div>
+        <p class="svc-p">Every part leaves with proper paperwork verified before shipment — saving buyers from receiving components they cannot legally install.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">03</div>
+        <div class="svc-h">Counterfeit Detection</div>
+        <p class="svc-p">Visual inspection, testing, and documentation authentication protect buyers from dangerous unapproved parts that can be life-threatening in service.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">04</div>
+        <div class="svc-h">Warranty Support</div>
+        <p class="svc-p">Clear warranty terms on every sale — with defined processes for returns, replacements, and credits when parts fail or prove incompatible.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">05</div>
+        <div class="svc-h">AOG Emergency Response</div>
+        <p class="svc-p">Dedicated AOG phone lines, after-hours availability, and expedited shipping arrangements for emergency aircraft-on-ground situations.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">06</div>
+        <div class="svc-h">Inventory Management Assistance</div>
+        <p class="svc-p">Helping regular customers optimize their own stock levels, reducing carrying costs and avoiding unnecessary inventory investment.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">07</div>
+        <div class="svc-h">Technical Support</div>
+        <p class="svc-p">Staff who understand aviation systems and can answer questions about part compatibility, installation requirements, and regulatory compliance.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- STORE TYPES TABLE -->
+  <section class="sec rv" id="store-types">
+    <div class="eyebrow">Market Landscape</div>
+    <h2 class="sh">Comparison of Store Types by Customer Focus</h2>
+    <p style="font-size:16px;color:var(--muted);margin-bottom:30px;max-width:700px;line-height:1.8;">Different types of aviation spare parts stores serve different needs. Understanding each type helps you choose the right partner for your specific operation.</p>
+    <div class="tbl-box">
+      <div class="tbl-cap">
+        <h3>Store Type Comparison Matrix</h3>
+        <p>Operational characteristics vary by store type. Many successful operations maintain relationships with multiple store types.</p>
+      </div>
+      <div class="tbl-sc">
+        <table>
+          <thead>
+            <tr>
+              <th>Store Type</th>
+              <th>Primary Customers</th>
+              <th>Inventory Focus</th>
+              <th>Response Time</th>
+              <th>Documentation Quality</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Full-Service Distributor</td>
+              <td>Airlines, MROs, fleets</td>
+              <td>Broad, multi-manufacturer</td>
+              <td><span class="bg">24 – 72 hrs</span></td>
+              <td>Excellent, standardized</td>
+            </tr>
+            <tr>
+              <td>Specialty Component Store</td>
+              <td>Specific maintenance needs</td>
+              <td>Narrow, deep in one category</td>
+              <td><span class="bg">24 – 48 hrs</span></td>
+              <td>Very good to excellent</td>
+            </tr>
+            <tr>
+              <td>OEM Authorized Store</td>
+              <td>Brand-loyal operators</td>
+              <td>Factory-new, manufacturer-specific</td>
+              <td><span class="bs">1 – 4 weeks</span></td>
+              <td>Excellent, factory-original</td>
+            </tr>
+            <tr>
+              <td>General Aviation Store</td>
+              <td>Private owners, flight schools</td>
+              <td>Light aircraft, piston engines</td>
+              <td><span class="bg">24 – 72 hrs</span></td>
+              <td>Good to very good</td>
+            </tr>
+            <tr>
+              <td>Salvage &amp; USM Store</td>
+              <td>Cost-conscious operators</td>
+              <td>Used serviceable, teardown</td>
+              <td><span class="bg">24 – 96 hrs</span></td>
+              <td>Variable, inspect carefully</td>
+            </tr>
+            <tr>
+              <td>Rotable Pool Store</td>
+              <td>Fleet operators</td>
+              <td>High-value exchange components</td>
+              <td><span class="bg">Immediate – 24 hrs</span></td>
+              <td>Very good, pool-managed</td>
+            </tr>
+            <tr>
+              <td>Digital-Only Store</td>
+              <td>Price-sensitive buyers</td>
+              <td>Virtual inventory from partners</td>
+              <td><span class="bs">Varies by partner</span></td>
+              <td>Varies by partner</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- EVALUATE BEFORE YOU NEED -->
+  <section class="sec rv">
+    <div class="dark-blk">
+      <div class="eyebrow">Pre-Emergency Planning</div>
+      <h2 class="sh">How to Evaluate a Store Before You Need It</h2>
+      <p class="sub-p">The worst time to evaluate an aviation spare parts store is when you have an aircraft on ground and need a part immediately. Smart maintenance professionals evaluate stores before emergencies strike.</p>
+      <div class="steps-dk">
+        <div class="step-dk">
+          <div class="step-n">1</div>
+          <p class="step-txt"><strong style="color:var(--silver-lt);">Request documentation samples</strong> — see how a store handles paperwork before you commit to a purchase. Quality is revealed in the details.</p>
+        </div>
+        <div class="step-dk">
+          <div class="step-n">2</div>
+          <p class="step-txt"><strong style="color:var(--silver-lt);">Test with small orders</strong> — verify quality, shipping speed, and customer service without risking large amounts on an unproven supplier.</p>
+        </div>
+        <div class="step-dk">
+          <div class="step-n">3</div>
+          <p class="step-txt"><strong style="color:var(--silver-lt);">Check references</strong> — from other customers operating similar aircraft types. Peer validation is the most reliable indicator of performance.</p>
+        </div>
+        <div class="step-dk">
+          <div class="step-n">4</div>
+          <p class="step-txt"><strong style="color:var(--silver-lt);">Visit facilities</strong> when possible — see storage conditions, inspection processes, and staff professionalism firsthand.</p>
+        </div>
+        <div class="step-dk">
+          <div class="step-n">5</div>
+          <p class="step-txt"><strong style="color:var(--silver-lt);">Review pricing</strong> across multiple stores — understand market rates before you need to buy urgently. Baseline pricing prevents emergency overpaying.</p>
+        </div>
+        <div class="step-dk">
+          <div class="step-n">6</div>
+          <p class="step-txt"><strong style="color:var(--silver-lt);">Establish credit terms</strong> in advance — removing friction from future transactions when speed matters most.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- DOCUMENTATION YOU MUST DEMAND -->
+  <section class="sec rv" id="docs">
+    <div class="eyebrow">Compliance</div>
+    <h2 class="sh">The Documentation You Must Demand</h2>
+    <div class="two-col">
+      <div class="prose">
+        <p>Every transaction with an aviation spare parts store must include proper documentation. The FAA 8130-3 Authorized Release Certificate is the standard for parts sold in the United States, certifying that the component conforms to approved design data and is in condition for safe operation.</p>
+        <p>The EASA Form 1 serves the same function for European-regulated operations. Both documents must include the part number, serial number, quantity, manufacturer name, a clear statement of conformity, the signature and certificate number of an authorized release person, and the issuing organization's certificate number.</p>
+        <p>For used parts, request traceability documentation showing which aircraft the part came from, why it was removed, and what inspections were performed. For overhauled parts, request the repair station's work order detailing the work performed. For life-limited parts, request documentation of accumulated usage and remaining life. A quality store provides these documents without hesitation. A store that resists or delays should be avoided.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:0;">
+        <div class="hl hl-em">
+          <h4>📋 FAA 8130-3 Certificate</h4>
+          <p>US gold standard — certifies the component conforms to approved design data and is in condition for safe operation. Must include authorized release person's signature and certificate number.</p>
+        </div>
+        <div class="hl hl-sv">
+          <h4>🇪🇺 EASA Form 1</h4>
+          <p>European equivalent — equally authoritative for EASA-regulated operations and internationally recognized under bilateral aviation agreements.</p>
+        </div>
+        <div class="hl hl-sk">
+          <h4>📁 Traceability Records</h4>
+          <p>For used parts: which aircraft, why removed, inspections performed. For overhauled parts: full work order. For life-limited: accumulated usage and remaining life.</p>
+        </div>
+        <div class="hl hl-rd" style="margin-bottom:0;">
+          <h4>🚫 No Hesitation Rule</h4>
+          <p>A quality store provides all documentation without hesitation. Any store that resists or delays documentation requests should be avoided immediately.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- RED FLAGS -->
+  <section class="sec rv">
+    <div class="rf-panel">
+      <div class="eyebrow" style="color:var(--danger);">
+        <span style="display:inline-block;width:22px;height:2px;background:var(--danger);"></span>
+        Risk Awareness
+      </div>
+      <h2 class="sh">Red Flags That Should Send You Elsewhere</h2>
+      <p style="font-size:16px;color:#6a2020;max-width:700px;margin-top:8px;line-height:1.78;">Not every aviation spare parts store operates with integrity. Certain warning signs should trigger immediate caution or outright rejection. Trust the evidence. Choose stores that demonstrate professionalism in every interaction.</p>
+      <div class="rf-grid">
+        <div class="rf-item">
+          <div class="rf-dot">⚠</div>
+          <p class="rf-txt"><strong>No documentation before payment.</strong> Stores that cannot or will not provide documentation before payment are almost always problematic. Legitimate suppliers understand that buyers need paperwork for planning and compliance.</p>
+        </div>
+        <div class="rf-item">
+          <div class="rf-dot">⚠</div>
+          <p class="rf-txt"><strong>No verifiable physical presence.</strong> Stores with no verifiable physical address, phone number, or online presence cannot be held accountable when problems arise. Always verify before committing.</p>
+        </div>
+        <div class="rf-item">
+          <div class="rf-dot">⚠</div>
+          <p class="rf-txt"><strong>Pressure to close quickly.</strong> Stores claiming limited availability or other interested buyers are using classic sales tactics that have no place in professional aviation procurement.</p>
+        </div>
+        <div class="rf-item">
+          <div class="rf-dot">⚠</div>
+          <p class="rf-txt"><strong>Unusual payment methods.</strong> Requests for cryptocurrency, wire transfers to personal accounts, or cash are likely attempts to avoid transaction traceability. Walk away.</p>
+        </div>
+        <div class="rf-item">
+          <div class="rf-dot">⚠</div>
+          <p class="rf-txt"><strong>No customer references.</strong> Stores that cannot provide references from other customers have not built legitimate business relationships. Professional stores welcome reference requests.</p>
+        </div>
+        <div class="rf-item">
+          <div class="rf-dot">⚠</div>
+          <p class="rf-txt"><strong>Consistent poor reviews.</strong> Patterns of complaints about documentation quality or shipping delays are earned reputations. Consistently poor online reviews reflect consistent poor performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- LOCAL VS GLOBAL -->
+  <section class="sec rv">
+    <div class="eyebrow">Sourcing Strategy</div>
+    <h2 class="sh">The Value of Local vs. Global Stores</h2>
+    <div class="two-col">
+      <div>
+        <div class="hl hl-em" style="margin-bottom:20px;">
+          <h4>🏙️ Local Store Advantages</h4>
+          <p>Proximity for driver pickup, understanding of local regulations and customs, flexible payment terms, and personal relationships that smooth every transaction. Best for urgent needs and common parts.</p>
+        </div>
+        <div class="hl hl-sk" style="margin-bottom:20px;">
+          <h4>🌍 Global Store Advantages</h4>
+          <p>Vast inventory, access to international supply networks, and often lower prices due to volume purchasing. Specialized expertise in specific aircraft types or component categories. Best for specialized and volume needs.</p>
+        </div>
+        <div class="hl hl-sv" style="margin-bottom:0;">
+          <h4>🤝 The Hybrid Approach</h4>
+          <p>Many successful maintenance operations use both — local stores for common parts and urgent needs, global suppliers for specialized components and volume purchasing. The best store is the one that has your part when you need it.</p>
+        </div>
+      </div>
+      <div class="prose">
+        <p>The choice between a local aviation spare parts store and a global supplier involves trade-offs that depend on your specific situation. Local stores offer proximity, often allowing you to send a driver to pick up parts rather than waiting for shipping. They understand local regulations, customs procedures, and shipping logistics. They may offer more flexible payment terms and personal relationships that smooth transactions.</p>
+        <p>However, local stores have limited inventory, often unable to stock the range of parts that global suppliers maintain. Global stores offer vast inventory, access to international supply networks, and often lower prices due to volume purchasing. They may have specialized expertise in specific aircraft types or component categories.</p>
+        <p>However, global stores involve longer shipping times, customs complications, and less personal service. Many successful maintenance operations use both, relying on local stores for common parts and urgent needs while turning to global suppliers for specialized components and volume purchasing. The best store is not local or global. The best store is the one that has the part you need when you need it.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- BUILDING RELATIONSHIP -->
+  <section class="sec rv">
+    <div class="eyebrow">Partnership Strategy</div>
+    <h2 class="sh">Building a Relationship with Your Primary Store</h2>
+    <div class="two-col">
+      <div class="prose">
+        <p>Developing a primary relationship with one exceptional aviation spare parts store delivers significant advantages. That store learns your fleet, your maintenance patterns, and your preferred part numbers. It anticipates your needs, adjusting inventory to match your consumption. It offers preferential pricing based on your volume and loyalty.</p>
+        <p>It prioritizes your requests during shortages, allocating available stock to established customers first. It provides faster responses to inquiries, knowing that your time is valuable. It works with you to resolve problems, recognizing that long-term relationships matter more than individual transaction profits.</p>
+        <p>Building this relationship requires investment from both sides. You must communicate clearly, pay promptly, and provide feedback. The store must deliver consistently, communicate transparently, and demonstrate that your business matters. When both parties commit, the resulting partnership becomes a strategic asset that improves maintenance operations and reduces procurement headaches. The time invested in building this relationship pays dividends on every future transaction.</p>
+      </div>
+      <div>
+        <ul class="tips">
+          <li>
+            <div class="tip-dot">📢</div>
+            <p class="tip-t"><strong>Communicate clearly.</strong> Share upcoming maintenance schedules so your store can pre-position inventory and guarantee availability.</p>
+          </li>
+          <li>
+            <div class="tip-dot">💳</div>
+            <p class="tip-t"><strong>Pay promptly.</strong> On-time payment builds trust that translates into better terms, first access to scarce inventory, and pricing priority.</p>
+          </li>
+          <li>
+            <div class="tip-dot">💬</div>
+            <p class="tip-t"><strong>Provide feedback.</strong> Both positive and negative feedback helps your store improve and demonstrates you are a serious, engaged partner.</p>
+          </li>
+          <li>
+            <div class="tip-dot">📊</div>
+            <p class="tip-t"><strong>Share consumption data.</strong> Letting your store see your usage patterns enables smarter inventory positioning that benefits both parties.</p>
+          </li>
+          <li>
+            <div class="tip-dot">🤝</div>
+            <p class="tip-t"><strong>Commit to volume.</strong> Consolidating purchases with your primary store rather than shopping every transaction earns the loyalty discounts and priority service you need.</p>
+          </li>
+          <li>
+            <div class="tip-dot">⭐</div>
+            <p class="tip-t"><strong>Refer others.</strong> Referring other operators to a store you trust deepens the relationship and often unlocks additional preferential treatment.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- SMALL OPERATORS -->
+  <section class="sec rv">
+    <div class="eyebrow">Small Operators</div>
+    <h2 class="sh">Small Operators and the Aviation Store</h2>
+    <div class="two-col">
+      <div class="prose">
+        <p>Private owners, flight schools, and small maintenance shops often feel that aviation spare parts stores are designed for large operators, not for them. This perception is understandable but incorrect. Most stores welcome small customers, recognizing that many large operators started as small ones and that private owners often become loyal, long-term customers.</p>
+        <p>The key for small operators is finding stores that treat them seriously. Look for stores with minimum order quantities that match your budget. Ask about shipping policies for small packages. Request catalog access or online search tools that let you browse inventory without sales pressure. Build relationships with counter staff who understand general aviation needs.</p>
+        <p>Consider joining type clubs or owner associations that have negotiated discounts with specific stores. The parts you need are available at stores that want your business. You just need to find them and demonstrate that you are a serious buyer, even if your budget is modest.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:18px;">
+        <div class="card">
+          <div class="card-ico ic-em">🏢</div>
+          <div class="card-h">Type Clubs & Associations</div>
+          <p class="card-p">Pre-negotiated discounts, trusted vendor lists, and model-specific sourcing intelligence from fellow operators who fly the same aircraft.</p>
+        </div>
+        <div class="card">
+          <div class="card-ico ic-sv">🛒</div>
+          <div class="card-h">Catalog & Online Access</div>
+          <p class="card-p">Request catalog access or digital search tools — browse inventory at your own pace without sales pressure before you need to buy urgently.</p>
+        </div>
+        <div class="card">
+          <div class="card-ico ic-sk">👤</div>
+          <div class="card-h">Counter Staff Relationships</div>
+          <p class="card-p">Build personal relationships with counter staff who understand GA needs — they are often the fastest path to finding obscure parts quickly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- FUTURE -->
+  <section class="sec rv" id="future">
+    <div class="eyebrow">What's Next</div>
+    <h2 class="sh">The Future of Aviation Spare Parts Stores</h2>
+    <p style="font-size:16px;color:var(--muted);margin-bottom:36px;max-width:720px;line-height:1.8;">Several trends are reshaping aviation spare parts stores and how they serve customers. Stores that embrace these trends will thrive. Those that resist will struggle as the market moves forward without them.</p>
+    <div class="trend-grid">
+      <div class="trend-card">
+        <div class="trend-ico">🤖</div>
+        <div class="trend-h">AI-Powered Search</div>
+        <p class="trend-p">Understands functional requirements, not just part numbers — suggesting certified alternatives when exact matches are unavailable to keep aircraft flying.</p>
+      </div>
+      <div class="trend-card">
+        <div class="trend-ico">⛓️</div>
+        <div class="trend-h">Blockchain Documentation</div>
+        <p class="trend-p">Tamper-proof certification records eliminating forged paperwork risk — the most significant compliance breakthrough in aviation commerce history.</p>
+      </div>
+      <div class="trend-card">
+        <div class="trend-ico">📊</div>
+        <div class="trend-h">Real-Time Inventory</div>
+        <p class="trend-p">Live stock visibility replaces theoretical listings — customers see actual available quantities, dramatically reducing order cancellations and delays.</p>
+      </div>
+      <div class="trend-card">
+        <div class="trend-ico">📱</div>
+        <div class="trend-h">Mobile Applications</div>
+        <p class="trend-p">The entire store in technicians' pockets — check availability, request quotes, and place orders from the hangar floor without leaving the aircraft.</p>
+      </div>
+      <div class="trend-card">
+        <div class="trend-ico">♻️</div>
+        <div class="trend-h">Sustainability Focus</div>
+        <p class="trend-p">Environmental pressure driving stores to emphasize used and overhauled parts — a structural tailwind creating new value in the certified aftermarket.</p>
+      </div>
+      <div class="trend-card">
+        <div class="trend-ico">🌍</div>
+        <div class="trend-h">Supply Chain Localization</div>
+        <p class="trend-p">Geopolitical tensions accelerating regional inventory strategies — creating new local supply nodes and sourcing opportunities across every continent.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- CONCLUSION -->
+  <section class="sec rv">
+    <div class="cncl">
+      <div class="eyebrow">Conclusion</div>
+      <h2 class="sh">Your Store, Your Fleet's Lifeline</h2>
+      <div class="cncl-body">
+        <p>The aviation spare parts store you choose is not merely a vendor. It is a partner in keeping your aircraft safe, your schedules intact, and your operations profitable. Whether you manage a fleet of hundreds or maintain a single personal aircraft, the quality of your parts supplier directly impacts your ability to fly when and where you need to.</p>
+        <p>Look for stores that combine deep inventory with deep expertise, competitive pricing with transparent documentation, fast response with careful quality control. Test them with small orders before trusting them with critical purchases. Build relationships that reward both parties over time.</p>
+        <p>The right aviation spare parts store <a href="https://aviation-spar.vercel.app/" class="tl" style="color:rgba(228,197,106,.9);">becomes an extension of your own maintenance team — working behind the scenes to ensure every part arrives on time, with proper paperwork, ready for installation</a>. That is not just a store. That is peace of mind.</p>
+      </div>
+      <a href="https://aircraftsparepartssupply.com/" class="cncl-cta">Visit Our Aviation Parts Store →</a>
+    </div>
+  </section>
+
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="ftr">
+    <div class="ftr-grid">
+      <div class="ftr-about">
+        <div style="display:flex;align-items:center;gap:13px;">
+          <div class="logo-mark">✈</div>
+          <div class="logo-text">
+            <span class="logo-name">AircraftSparePartsSupply</span>
+            <span class="logo-sub">Certified Aviation Components</span>
+          </div>
+        </div>
+        <p>Your trusted aviation spare parts store — FAA and EASA certified components for commercial, regional, cargo, and general aviation operators worldwide. AOG response available 24/7.</p>
+      </div>
+      <div class="ftr-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">7 Store Services</a></li>
+          <li><a href="#store-types">Store Types Guide</a></li>
+          <li><a href="#docs">Documentation Rules</a></li>
+          <li><a href="#future">Future Trends</a></li>
+          <li><a href="https://aircraftsparepartssupply.com/">Browse All Parts</a></li>
+        </ul>
+      </div>
+      <div class="ftr-col">
+        <h4>Certifications</h4>
+        <ul>
+          <li><a href="#">FAA 8130-3 Parts</a></li>
+          <li><a href="#">EASA Form 1 Parts</a></li>
+          <li><a href="#">Used Serviceable USM</a></li>
+          <li><a href="#">Overhauled Exchange</a></li>
+          <li><a href="#">AOG Emergency Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <p>© 2024 AircraftSparePartsSupply. All rights reserved. All parts comply with FAA/EASA airworthiness standards.</p>
+      <div class="ftr-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const items = document.querySelectorAll('.rv');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+  }, { threshold: 0.07 });
+  items.forEach(el => io.observe(el));
+</script>
+</body>
+</html>
